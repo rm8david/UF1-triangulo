@@ -19,6 +19,7 @@ public class LanzadorTriangulo {
         try {
             proceso.start();
             proceso2.start();
+
             proceso3.start();
             System.out.println("El proceso ha sido lanzado con exito");
             System.out.println("Revisa el contenido de src/resources/salida.txt\ny de src/resources/errores.txt ");
