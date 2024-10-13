@@ -2,6 +2,9 @@ import java.time.LocalDateTime;
 
 public class Triangulo {
     public static void main(String[] args) {
+        //añadimos la fecha actual hasta los milisegundos
+        //tanto al inicio como al final, asi podemos saber
+        //que proceso finaliza primero, etc
         System.out.println(LocalDateTime.now());
         if (args.length == 0) {
             System.out.println("Se requiere un argumento");
