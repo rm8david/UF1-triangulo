@@ -6,6 +6,7 @@ public class LanzadorTriangulo {
     public static void main(String[] args) {
         String classpath = System.getProperty("java.class.path");
         //Creamos 3 procesos para lanzar la clase Triangulo, con su classpath para saber la ruta donde se encuentra
+        // y le damos los valores a cada proceso
         ProcessBuilder proceso = new ProcessBuilder("java", "-cp", classpath, "Triangulo","5");
         ProcessBuilder proceso2 = new ProcessBuilder("java", "-cp", classpath, "Triangulo","7");
         ProcessBuilder proceso3 = new ProcessBuilder("java", "-cp", classpath, "Triangulo","9");
